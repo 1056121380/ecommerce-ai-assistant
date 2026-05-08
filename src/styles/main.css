@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Element Plus 自定义主题色 */
+:root {
+  --el-color-primary: #409eff;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcdfe6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0c4cc;
+}
+
+/* 通用卡片样式 */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* 分区标题 */
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #303133;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 结果展示区 */
+.result-box {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #606266;
+}
+
+.result-box pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+}
+
+/* 深色模式 */
+:root.dark {
+  color-scheme: dark;
+}
+
+:root.dark body {
+  background: #1a1a1a;
+  color: #e5e5e5;
+}
+
+:root.dark .app-container {
+  background: #1a1a1a;
+}
+
+:root.dark .sidebar {
+  background: #2a2a2a;
+  border-right-color: #3a3a3a;
+}
+
+:root.dark .logo {
+  border-bottom-color: #3a3a3a;
+}
+
+:root.dark .nav-item {
+  color: #b0b0b0;
+}
+
+:root.dark .nav-item:hover {
+  background: #3a3a3a;
+  color: #409eff;
+}
+
+:root.dark .nav-item.active {
+  background: #409eff;
+  color: #fff;
+}
+
+:root.dark .sidebar-footer {
+  border-top-color: #3a3a3a;
+}
+
+:root.dark .card,
+:root.dark .chat-header,
+:root.dark .template-bar,
+:root.dark .input-area {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+:root.dark .message-content {
+  background: #3a3a3a;
+  color: #e5e5e5;
+}
+
+:root.dark .message.user .message-content {
+  background: #409eff;
+  color: #fff;
+}
+
+:root.dark .section-title {
+  color: #e5e5e5;
+}
+
+:root.dark .result-box,
+:root.dark pre {
+  background: #1a1a1a;
+  color: #e5e5e5;
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+}
+
+:root.dark ::-webkit-scrollbar-thumb:hover {
+  background: #5a5a5a;
+}

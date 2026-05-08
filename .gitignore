@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+final/
+installer/
+release/
+*.zip
+*.exe
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Auto-generated files
+auto-imports.d.ts
+components.d.ts
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
